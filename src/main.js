@@ -1,11 +1,12 @@
 import TurndownService from 'turndown';
 
 const generateObsidianUri = (title, content) => {
+    const obsidianAdvancedUri = new URL('obsidian://advanced-uri');
+
     if (!myVault || !dirToStore) {
+        window.location.href = obsidianAdvancedUri.toString();
         return null;
     }
-
-    const obsidianAdvancedUri = new URL('obsidian://advanced-uri');
 
     const fileName = `${title.replace(/\r?\n/g, '')}.md`;
 
@@ -31,4 +32,4 @@ const main = () => {
     window.location.href = obsidianUri.toString();
 };
 
-const jsResult = main();
+export const jsResult = main();
