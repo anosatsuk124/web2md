@@ -32,4 +32,4 @@ const main = () => {
     window.location.href = obsidianUri.toString();
 };
 
-export const jsResult = main();
+main();
