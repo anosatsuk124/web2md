@@ -2,7 +2,7 @@ import TurndownService from 'turndown';
 
 const generateObsidianUri = (title, content) => {
     if (!myVault || !dirToStore) {
-        return;
+        return null;
     }
 
     const obsidianAdvancedUri = new URL('obsidian://advanced-uri');
@@ -31,4 +31,4 @@ const main = () => {
     window.location.href = obsidianUri.toString();
 };
 
-main();
+const jsResult = main();
