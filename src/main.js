@@ -28,7 +28,8 @@ const main = () => {
 
     const obsidianUri = generateObsidianUri(title, markdown);
 
-    window.open(obsidianUri.toString(), '_blank');
+    // window.open(obsidianUri.toString(), '_blank');
+    return obsidianUri.toString();
 };
 
 main();
