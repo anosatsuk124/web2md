@@ -1,0 +1,19 @@
+{
+    "name": "web2md",
+    "version": "1.0.0",
+    "description": "A simple markdown convertor from a rendered dom.",
+    "main": "./dist/index.js",
+    "author": "Satsuki Akiba <anosatsuk124@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "fmt": "prettier --write .",
+        "build": "rspack build"
+    },
+    "devDependencies": {
+        "@rspack/cli": "^0.1.4",
+        "prettier": "^2.8.7"
+    },
+    "dependencies": {
+        "turndown": "^7.1.2"
+    }
+}
